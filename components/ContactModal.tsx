@@ -45,7 +45,7 @@ export default function ContactModal({ open, onClose }: Props) {
       />
 
       {/* Centering wrapper uses dynamic viewport height (iOS keyboard friendly) */}
-      <div className="relative flex min-h-[100dvh] items-center justify-center p-4">
+      <div className="relative flex min-h-dvh items-center justify-center p-4">
         
         {/* Modal panel: scrollable with safe-area padding */}
         <div
@@ -78,7 +78,7 @@ export default function ContactModal({ open, onClose }: Props) {
                 Message sent — thank you.
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+              <form onSubmit={handleSubmit} className="mt-6 space-y-4 text-base md:text-sm">
                 <div className="grid gap-4 grid-cols-1">
                   <div className="grid gap-2 md:grid-cols-2">
                     <label className="block">
@@ -87,7 +87,7 @@ export default function ContactModal({ open, onClose }: Props) {
                       </span>
                       <input
                         name="firstname"
-                        className="mt-2 w-full rounded-sm border border-red-300 px-2 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-200"
+                        className="text-base md:text-sm mt-2 w-full rounded-sm border border-red-300 px-2 py-3 outline-none focus:ring-2 focus:ring-slate-200"
                       />
                     </label>
 
@@ -97,7 +97,7 @@ export default function ContactModal({ open, onClose }: Props) {
                       </span>
                       <input
                         name="lastname"
-                        className="mt-2 w-full rounded-sm border border-red-300 px-2 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-200"
+                        className="text-base md:text-sm mt-2 w-full rounded-sm border border-red-300 px-2 py-3 outline-none focus:ring-2 focus:ring-slate-200"
                       />
                     </label>
                   </div>
@@ -111,7 +111,7 @@ export default function ContactModal({ open, onClose }: Props) {
                       type="email"
                       name="email"
                       required
-                      className="mt-2 w-full rounded-sm border-red-300 border px-2 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-200"
+                      className="text-base md:text-sm mt-2 w-full rounded-sm border-red-300 border px-2 py-3 outline-none focus:ring-2 focus:ring-slate-200"
                     />
                     <ValidationError
                       prefix="Email"
@@ -126,7 +126,7 @@ export default function ContactModal({ open, onClose }: Props) {
                     </span>
                     <input
                       name="organisation"
-                      className="mt-2 w-full rounded-sm border-red-300 border px-2 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-200"
+                      className="text-base md:text-sm mt-2 w-full rounded-sm border-red-300 border px-2 py-3 outline-none focus:ring-2 focus:ring-slate-200"
                     />
                   </label>
                 </div>
@@ -140,7 +140,7 @@ export default function ContactModal({ open, onClose }: Props) {
                     name="message"
                     required
                     rows={6}
-                    className="mt-2 w-full resize-none rounded-sm border-red-300 border px-2 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-200"
+                    className="text-base md:text-sm mt-2 w-full resize-none rounded-sm border-red-300 border px-2 py-3 outline-none focus:ring-2 focus:ring-slate-200"
                   />
                   <ValidationError
                     prefix="Message"

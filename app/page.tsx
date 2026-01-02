@@ -31,7 +31,7 @@ export default function Home() {
         {/* Right: 1/3 */}
         <aside className="relative md:col-span-1 bg-white">
         {/* Centered content */}
-        <div className="h-full flex md:items-center">
+        <div className="md:h-full flex md:items-center">
           <div className="w-full pt-10 md:pt-0 px-6 md:px-10">
             <div>
               <div className="text-2xl font-medium text-slate-900">
@@ -66,13 +66,13 @@ export default function Home() {
         </div>
 
         {/* Anchored logo */}
-        <div className="absolute bottom-[30px] md:bottom-[50px] right-[20px] md:right-[40px]">
+        <div className="float-right pt-20 pb-10 pr-5 md:pb-0 md:p-0 md:absolute md:bottom-12.5 md:right-10">
           <Image
             src="/ooda-logo.jpg"
             alt="Ooda logo"
             width={240}
             height={100}
-            className="w-[100px] md:w-[120px] h-auto"
+            className="w-25 md:w-30 h-auto"
             priority
           />
         </div>
