@@ -78,7 +78,7 @@ export default function ContactModal({ open, onClose }: Props) {
                 Message sent — thank you.
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="mt-6 space-y-4 text-base md:text-sm">
+              <form onSubmit={handleSubmit} className="mt-6 space-y-4 text-base">
                 <div className="grid gap-4 grid-cols-1">
                   <div className="grid gap-2 md:grid-cols-2">
                     <label className="block">
